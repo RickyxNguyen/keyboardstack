@@ -5,11 +5,11 @@ export function auth(email, password) {
 }
 
 export function logout() {
-  return firebaseAuth().signOut().then(() => {window.location.href = '/'});
+  return firebaseAuth().signOut();
 }
 
 export function login(email, password) {
-  return firebaseAuth().signInWithEmailAndPassword(email, password).then(() => {window.location.href = '/keyboard'});
+  return firebaseAuth().signInWithEmailAndPassword(email, password);
 }
 
 export function resetPassword(email) {
