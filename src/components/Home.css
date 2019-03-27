@@ -1,0 +1,22 @@
+.home{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 100px;
+}
+
+.buttons{
+    margin-top: 100px;
+    font-family: 'Poiret One', cursive;
+    height: 100%;
+    width: 100%;
+    
+}
+.button{
+    height: 150px;
+    width: 200px;
+}
+.divider{
+    width:10%;
+    height:auto;
+    display:inline-block;
+}
