@@ -171,7 +171,7 @@ class Register extends Component{
               )} />
               <div className="divider"/>
               <Route render={({history}) => (
-              <Button onClick={() => { history.push('/') }}>Return to Register</Button>
+              <Button onClick={() => { history.push('/') }}>Return to Home</Button>
               )} />
               <div className="divider"/>
               <Button color="primary"	type="submit">Register</Button>
