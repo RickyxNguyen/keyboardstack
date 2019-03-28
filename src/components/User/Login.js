@@ -103,6 +103,10 @@ class Login extends Component{
               <Button onClick={() => { history.push('/register') }}>Return to Register</Button>
               )} />
               <div className="divider"/>
+              <Route render={({history}) => (
+              <Button onClick={() => { history.push('/') }}>Return to Register</Button>
+              )} />
+              <div className="divider"/>
               <Button color="primary" type="submit">Login</Button>
 
           </Form>
