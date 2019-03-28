@@ -8,7 +8,7 @@ const Home = () => [
 <div>
 
   <div className = "home">
-  <strong>Keyboard Stack</strong> 
+  <strong>Noj</strong> 
   </div>
 
   <div className = "buttons" style={{display: 'flex', justifyContent: 'center'}} xs={12}>
