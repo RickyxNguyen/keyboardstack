@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Login from "./components/User/Login"
 import Register from "./components/User/Register"
-import Keyboard from "./components/Keyboard/music"
+import Keyboard1 from "./components/Keyboard/music"
+import Keyboard2 from "./components/Keyboard/atoz"
+import Keyboard3 from "./components/Keyboard/noj"
+
+
 import Home from "./components/Home"
 import page404 from "./components/User/page404"
 import Sky from 'react-sky';
@@ -27,7 +31,7 @@ function PublicRoute ({component: Component, authed, ...rest}) {
       {...rest}
       render={(props) => authed === false
         ? <Component {...props} />
-        : <Redirect to='/keyboard' />}
+        : <Redirect to='/keyboard1' />}
     />
   )
 }
@@ -80,7 +84,10 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <PublicRoute exact path="/register" authed={this.state.authed} component={Register} />
           <PublicRoute exact path="/login" authed={this.state.authed} component={Login} />
-          <PrivateRoute exact path ="/keyboard" authed={this.state.authed} component={Keyboard} />
+          <PrivateRoute exact path ="/keyboard1" authed={this.state.authed} component={Keyboard1} />
+          <PrivateRoute exact path ="/keyboard2" authed={this.state.authed} component={Keyboard2} />
+          <PrivateRoute exact path ="/keyboard3" authed={this.state.authed} component={Keyboard3} />
+
           <Route component={page404} />
       </Switch>
       </BrowserRouter>

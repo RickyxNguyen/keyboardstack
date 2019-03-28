@@ -22,7 +22,7 @@ section {
 	letter-spacing: 2px;
 }
 .keys{
-	margin-top: 8%;
+	margin-top: 4%;
 }
 .black {
 	position: absolute;
@@ -78,7 +78,7 @@ section {
 	border: 2px solid #60F0C0;
 	transform: scale(1.2);
 }
-button{
+.keybutton{
 	width: 10%;
 	height:8%;
 	margin-top: 1px;
@@ -86,4 +86,21 @@ button{
      position:absolute;
      top:0;
      right:0;
+}
+.list{
+	width: 10%;
+	height:8%;
+	margin-top: 1px;
+     margin-left: 2px;
+     position:absolute;
+     top:0;
+     right:0;
+}
+.divider{
+    width:10%;
+    height:auto;
+    display:inline-block;
+}
+.redirect{
+	margin-top:4%;
 }

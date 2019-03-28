@@ -5,7 +5,7 @@ import {Button, Row} from 'reactstrap';
 import {logout} from '../helpers/auth'
 import { Route } from 'react-router-dom'
 
-export default class Music extends Component{
+export default class Noj extends Component{
  render(){
     
   return ( 
@@ -14,21 +14,22 @@ export default class Music extends Component{
         <Row>
         <Button color="primary" type="submit" className="keybutton" onClick = {logout}>Log Out</Button>
         </Row>
-         <div className = "redirect">
+        <div className = "redirect">
          <Route render={({ history}) => (
-            <Button color="info" className = "profile" onClick={() => { history.push('/keyboard2') }}>
-                Alphabet
+            <Button color="info" className = "profile" onClick={() => { history.push('/keyboard1') }}>
+                Music
             </Button>
          )} />
              <div className="divider"/>
 
         <Route render={({ history}) => (
-            <Button color="danger" className = "profile" onClick={() => { history.push('/keyboard3') }}>
-                Noj
+            <Button color="danger" className = "profile" onClick={() => { history.push('/keyboard2') }}>
+                Alphabet
             </Button>
          )} />
          </div>
     <div id="focus" className="keys">
+ 
 
         <div id="row1">
         <div data-key="81" className="key">
@@ -121,32 +122,32 @@ export default class Music extends Component{
     </div>
     
     <div>
-        <audio data-key={81} src="./assets/piano/1.wav" />
-        <audio data-key={87} src="./assets/piano/2.wav" />
-        <audio data-key={69} src="./assets/piano/3.wav" />
-        <audio data-key={82} src="./assets/piano/4.wav" />
-        <audio data-key={84} src="./assets/piano/5.wav" />
-        <audio data-key={89} src="./assets/piano/6.wav" />
-        <audio data-key={85} src="./assets/piano/7.wav" />
-        <audio data-key={73} src="./assets/piano/8.wav" />
-        <audio data-key={79} src="./assets/piano/9.wav" />
-        <audio data-key={80} src="./assets/piano/10.wav" />
-        <audio data-key={65} src="./assets/piano/11.wav" />
-        <audio data-key={83} src="./assets/piano/12.wav" />
-        <audio data-key={68} src="./assets/piano/13.wav" />
-        <audio data-key={70} src="./assets/piano/14.wav" />
-        <audio data-key={71} src="./assets/piano/15.wav" />
-        <audio data-key={72} src="./assets/piano/16.wav" />
-        <audio data-key={74} src="./assets/piano/17.wav" />
-        <audio data-key={75} src="./assets/piano/18.wav" />
-        <audio data-key={76} src="./assets/piano/19.wav" />
-        <audio data-key={90} src="./assets/piano/20.wav" />
-        <audio data-key={88} src="./assets/piano/21.wav" />
-        <audio data-key={67} src="./assets/piano/22.wav" />
-        <audio data-key={86} src="./assets/piano/23.wav" />
-        <audio data-key={66} src="./assets/piano/24.wav" />
-        <audio data-key={78} src="./assets/piano/25.wav" />
-        <audio data-key={77} src="./assets/piano/26.wav" />
+        <audio data-key={81} src="./assets/sound bytes/I gotta have a chance man.mp3" />
+        <audio data-key={87} src="./assets/sound bytes/copy that.mp3" />
+        <audio data-key={69} src="./assets/sound bytes/do it now.mp3" />
+        <audio data-key={82} src="./assets/sound bytes/dont try to figure out how this works cuz it doesn't work.mp3" />
+        <audio data-key={84} src="./assets/sound bytes/i dont know what im doing.mp3" />
+        <audio data-key={89} src="./assets/sound bytes/i just showed you man.mp3" />
+        <audio data-key={85} src="./assets/sound bytes/i've never tried this.mp3" />
+        <audio data-key={73} src="./assets/sound bytes/it was a big one.mp3" />
+        <audio data-key={79} src="./assets/sound bytes/it's a rule.mp3" />
+        <audio data-key={80} src="./assets/sound bytes/learn less.mp3" />
+        <audio data-key={65} src="./assets/sound bytes/learn more.mp3" />
+        <audio data-key={83} src="./assets/sound bytes/obviously.mp3" />
+        <audio data-key={68} src="./assets/sound bytes/oh my god javascript.mp3" />
+        <audio data-key={70} src="./assets/sound bytes/power of react router.mp3" />
+        <audio data-key={71} src="./assets/sound bytes/start it up.mp3" />
+        <audio data-key={72} src="./assets/sound bytes/start me up.mp3" />
+        <audio data-key={74} src="./assets/sound bytes/there's some messed up stuff here.mp3" />
+        <audio data-key={75} src="./assets/sound bytes/this didn't work the first time.mp3" />
+        <audio data-key={76} src="./assets/sound bytes/uhh.mp3" />
+        <audio data-key={90} src="./assets/sound bytes/you mean my friend monster.mp3" />
+        <audio data-key={88} src="./assets/sound bytes/cmon.mp3" />
+        <audio data-key={67} src="./assets/sound bytes/kill me.mp3" />
+        <audio data-key={86} src="./assets/sound bytes/do it.mp3" />
+        <audio data-key={66} src="./assets/sound bytes/do it now i am here what are you waiting for.mp3" />
+        <audio data-key={78} src="./assets/sound bytes/get back to da chopper.mp3" />
+        <audio data-key={77} src="./assets/sound bytes/nonsense.mp3" />
 
 
 
