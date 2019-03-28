@@ -8,7 +8,7 @@ import page404 from "./components/User/page404"
 import Sky from 'react-sky';
 import { firebaseAuth } from './components/config/constants';
 
-import { BrowserRouter, Switch, Route, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 function PrivateRoute ({component: Component, authed, ...rest}) {
   return (

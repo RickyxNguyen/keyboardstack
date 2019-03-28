@@ -1,16 +1,16 @@
 import React from 'react';
 import "./keyboard.css";
 import "./action.js";
-import {Button} from 'reactstrap';
+import {Button, Row} from 'reactstrap';
 import {logout} from '../helpers/auth'
 const Music = () =>{
  
   return ( 
     
     <section>
-        <div>
+        <Row>
         <Button color="primary" type="submit" onClick = {logout}>Log Out</Button>
-        </div>
+        </Row>
          
     <div id="focus" className="keys">
 
