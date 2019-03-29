@@ -74,7 +74,7 @@ class App extends Component {
             /* 5: your other image... */
             /* ... */
           }}
-          how={360} /* Pass the number of images Sky will render chosing randomly */
+          how={240} /* Pass the number of images Sky will render chosing randomly */
           time={600} /* time of animation */
           size={'150px'} /* size of the rendered images */
           background={'white'} /* color of background */
